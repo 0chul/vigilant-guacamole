@@ -1,0 +1,12 @@
+{
+  "name": "vigilant-guacamole",
+  "version": "1.0.0",
+  "description": "Generates humorous messages based on fart types",
+  "scripts": {
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
