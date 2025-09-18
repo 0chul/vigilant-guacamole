@@ -1,32 +1,70 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <title>방귀 유머 생성기</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Chart</title>
     <style>
-      body {
-        font-family: sans-serif;
-        margin: 2rem;
-      }
-      #output {
-        margin-top: 1rem;
-        font-weight: bold;
-      }
+        .chart-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 40px auto;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        .chart-bar-container {
+            display: flex;
+            align-items: flex-end;
+            height: 300px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            position: relative;
+        }
+        .chart-bar {
+            flex: 1;
+            margin: 0 10px;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .chart-bar-1 { background-color: #5bb2e8; height: 100%; }
+        .chart-bar-2 { background-color: #a4cff5; height: 80%; }
+        .chart-bar-3 { background-color: #c7e0f8; height: 60%; }
+        .chart-label {
+            position: absolute;
+            bottom: -30px;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            white-space: nowrap;
+        }
+        .chart-percentage {
+            position: absolute;
+            top: -20px;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+        }
     </style>
-  </head>
-  <body>
-    <h1>방귀 유머 생성기</h1>
-    <label for="fartType">방귀 종류를 선택하세요:</label>
-    <select id="fartType">
-      <option value="silent">조용하지만 독한</option>
-      <option value="loud">시끄럽고 당당한</option>
-      <option value="squeaky">삐익삐익 몰래</option>
-      <option value="machine">기관총 스타일</option>
-      <option value="sulfur">유황 냄새 작렬</option>
-    </select>
-    <button id="generate">유머 생성</button>
-    <div id="output"></div>
-    <script src="script.js"></script>
-  </body>
+</head>
+<body>
+<div class="chart-container">
+    <div class="chart-bar-container">
+        <div class="chart-bar chart-bar-1">
+            <div class="chart-percentage">100%</div>
+            <div class="chart-label">제품 추천</div>
+        </div>
+        <div class="chart-bar chart-bar-2">
+            <div class="chart-percentage">80%</div>
+            <div class="chart-label">분석</div>
+        </div>
+        <div class="chart-bar chart-bar-3">
+            <div class="chart-percentage">60%</div>
+            <div class="chart-label">제공 정보 결과</div>
+        </div>
+    </div>
+</div>
+</body>
 </html>
-
